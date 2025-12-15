@@ -1,5 +1,6 @@
 export default {
-  async fetch(request, env, ctx) {
-    return new Response("Hello Cloudflare!");
+  async scheduled(event, env, ctx) {
+    console.log("cron fired");
   }
 };
+
